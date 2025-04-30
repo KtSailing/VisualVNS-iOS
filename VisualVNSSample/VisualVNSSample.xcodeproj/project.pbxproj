@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D71A1FCA2DC2839A002B249D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D71A1FC92DC2839A002B249D /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D754DF102DC2816600A75ACB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71A1FCA2DC2839A002B249D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D71A1FC82DC2839A002B249D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D754DEF82DC2816500A75ACB = {
 			isa = PBXGroup;
 			children = (
 				D754DF032DC2816500A75ACB /* VisualVNSSample */,
 				D754DF122DC2816600A75ACB /* VisualVNSSampleTests */,
 				D754DF1C2DC2816600A75ACB /* VisualVNSSampleUITests */,
+				D71A1FC82DC2839A002B249D /* Frameworks */,
 				D754DF022DC2816500A75ACB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 			);
 			name = VisualVNSSample;
 			packageProductDependencies = (
+				D71A1FC92DC2839A002B249D /* Alamofire */,
 			);
 			productName = VisualVNSSample;
 			productReference = D754DF012DC2816500A75ACB /* VisualVNSSample.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = D754DEF82DC2816500A75ACB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D754DF4C2DC2825B00A75ACB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D754DF022DC2816500A75ACB /* Products */;
 			projectDirPath = "";
@@ -416,10 +433,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Debug;
@@ -455,10 +473,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Release;
@@ -593,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D754DF4C2DC2825B00A75ACB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D71A1FC92DC2839A002B249D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D754DF4C2DC2825B00A75ACB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D754DEF92DC2816500A75ACB /* Project object */;
 }
