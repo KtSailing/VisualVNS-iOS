@@ -22,20 +22,17 @@ https://github.com/user-attachments/assets/798ff967-a08b-4fcb-ac4a-287019302389
 このような制約の中で、各セールスマンの経路長の総和が最小になる経路セットを作成し、マップ上で表示します。
 
 ## 必要なライブラリ
-- django
-- googlemaps api
-- 
+- Alamofire 
 
 ## 上記ライブラリのインストール方法
+Xcodeを起動 -> 上部メニューのFile -> Add package Dependencies.. ->
+
 
 ## 使い方
+
 
 ## 注意点
 
 ## 作者情報
 
-
-
-## 概要
-### 実装機能
 
